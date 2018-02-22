@@ -9,9 +9,9 @@ A high level implementation of reflecting and setting data types, ideal for mani
 ```go
 var s = struct {
         Name struct {
-        First string
-        Last  string
-    }
+            First string
+            Last  string
+        }
     Location string
 }{}
 
