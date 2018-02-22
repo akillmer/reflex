@@ -8,10 +8,10 @@ A high level implementation of reflecting and setting data types, ideal for mani
 ## Setting a field
 ```go
 var s = struct {
-        Name struct {
-            First string
-            Last  string
-        }
+    Name struct {
+        First string
+        Last  string
+    }
     Location string
 }{}
 
