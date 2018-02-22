@@ -32,10 +32,10 @@ data["Name.Last"] = "Killmer"
 m.Map(data)
 ```
 
-The key difference between `Map` and `Set` is when it comes down to slices. You may want to populate multiple fields of a struct before adding it to the model's slice. Using `Set` would result in a new element being added for every time it's called.
+The key difference between `Map` and `Set` is when it comes down to slices. You may want to populate multiple fields of a struct before adding it to the model's slice. Calling `Set` commits the new element to the model's slice (or overwrites the previous value).
 
 ## All setter, no getter
-Since `reflex` needs an `interface{}` to work then obviously it doesn't need to provide any getter functions as you have access to the original struct. 
+Since `reflex` needs an `interface{}` to work then obviously it doesn't need to provide any getter functions, as you have access to the original struct. 
 
 ## Caveats
-Naturally, making sure the value you're assigning to the model is of the same type. If not then your program will panic. Also, I have not implemented support for `map` types yet.
+Naturally, make sure the value you're assigning to the model is of the same type. If not then your program will panic. Also, I have not implemented support for `map` types yet.
